@@ -11,7 +11,7 @@
 
 		var gettime = date.getTime();
 		console.log('milliseconds:',gettime);
-		console.log("±âÁØÀÏ : ",date);
+		console.log("ê¸°ì¤€ì¼ : ",date);
 
 		function caldate(day){
 			var caledmonth,caledday,caledyear;
@@ -30,11 +30,11 @@
 			return caledmonth + '/' + caledday + '/' + caledyear;
 		}
 
-		console.log("30ÀÏ Àü ³¯Â¥ :"+caldate(30));
-		console.log("ÀÏÁÖÀÏ Àü ³¯Â¥ :"+caldate(7));
-		console.log("ÇÏ·ç ÈÄ ³¯Â¥ :"+caldate(-1));
-		console.log("ÀÏÁÖÀÏ ÈÄ ³¯Â¥ :"+caldate(-7));
-		console.log("30ÀÏ ÈÄ ³¯Â¥ :"+caldate(-30));
+		console.log("30ì¼ ì „ ë‚ ì§œ :"+caldate(30));
+		console.log("ì¼ì£¼ì¼ ì „ ë‚ ì§œ :"+caldate(7));
+		console.log("í•˜ë£¨ í›„ ë‚ ì§œ :"+caldate(-1));
+		console.log("ì¼ì£¼ì¼ í›„ ë‚ ì§œ :"+caldate(-7));
+		console.log("30ì¼ í›„ ë‚ ì§œ :"+caldate(-30));
 
 	</script>
 
