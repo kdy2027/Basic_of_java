@@ -1,0 +1,156 @@
+1.
+select empno, ename, sal
+from emp
+where DEPTNO in (10);
+
+2.
+select ename, hiredate, deptno
+from emp
+where EMPNO = 7369;
+
+3.
+select *
+from emp
+where ename = '이종석';
+
+4.
+select ename, deptno, sal
+from emp
+where hiredate = '09/04/02';
+
+5.
+select *
+from emp
+where not job = '사무';
+
+6.
+select empno, ename, sal, job, hiredate, deptno
+from emp
+where hiredate > '10/01/01';
+
+7.
+select ename, sal, deptno
+from emp
+where sal > 800;
+
+8.
+select empno, ename, sal, job, hiredate, deptno
+from emp
+where deptno >= 20;
+
+
+9.
+select *
+from emp
+where ename > '업__';
+
+
+10.
+select *
+from emp
+where hiredate < '07/01/01';
+
+
+11. 
+select empno, ename
+from emp
+where empno <= 7698;
+
+
+12.
+select ename, job,sal
+from emp
+where sal > 1600 and sal<3000;
+
+
+13.
+select empno, ename, sal, job, hiredate, deptno
+from emp
+where empno not in(7654,7782);
+
+
+14.
+select empno, ename, sal, job, hiredate, deptno
+from emp
+where job  in('영업','관리');
+
+
+15.
+select empno, ename, deptno
+from emp
+where not deptno in(20,30);
+
+
+16.
+select empno, ename,hiredate, deptno
+from emp
+where ename like '송%';
+
+
+17.
+select empno, ename, sal, job, hiredate, deptno
+from emp
+where ename like '%현%';
+
+
+18.
+select empno, ename, sal, job, hiredate, deptno
+from emp
+where ename like '_기%';
+
+
+19.
+SELECT  *
+FROM emp
+WHERE comm IS NULL; 
+
+20.
+SELECT empno, ename, sal, job, hiredate, deptno
+FROM emp
+WHERE comm IS NOT NULL; 
+
+21.
+select ename, job,sal
+from emp
+where deptno like '20' and sal>1500;
+
+
+22.
+select empno, ename, deptno
+from emp
+where ename like '김%' or deptno = 30;
+
+
+23.
+select empno, ename, sal, job, hiredate, deptno
+from emp
+where sal> 1500 and deptno = 30;
+
+
+24.
+select empno, ename, sal, job, hiredate, deptno
+from emp
+where deptno = 10
+ORDER BY empno;
+
+25
+select empno, ename, sal, job, hiredate, deptno
+from emp
+ORDER BY sal DESC;
+
+
+26.
+select empno, ename, sal, job, hiredate, deptno
+from emp
+ORDER BY empno , sal DESC;
+
+
+
+
+
+
+
+
+
+
+
