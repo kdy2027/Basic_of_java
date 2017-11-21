@@ -8,17 +8,14 @@ public class ex_01 {
 		
 		int x;
 		int arr [] = {10,20,30,40,50};
-		int y;
 			
-				System.out.println("Ã£°í½ÍÀº °ªÀ» ÀÔ·ÂÇÏ¼¼¿ä");
+				System.out.println("ì°¾ê³ ì‹¶ì€ ê°’ì„ ì…ë ¥í•˜ì„¸ìš”");
 				int z = sc.nextInt();
 				
 			for(x=0; x<arr.length; x++){
 					
-			y = arr [x];
-					
 			if(z==arr[x]){
-				System.out.println(z+"°ªÀº"+x+"¹ø À§Ä¡¿¡ ÀÖ½À´Ï´Ù");
+				System.out.println(z+"ê°’ì€"+x+"ë²ˆ ìœ„ì¹˜ì— ìˆìŠµë‹ˆë‹¤");
 			}
 			
 			}
