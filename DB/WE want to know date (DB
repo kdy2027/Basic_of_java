@@ -1,0 +1,42 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<title>
+	
+	</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var date = new Date();
+
+		var gettime = date.getTime();
+		console.log('milliseconds:',gettime);
+		console.log("기준일 : ",date);
+
+		function caldate(day){
+			var caledmonth,caledday,caledyear;
+
+			var v = new Date(gettime - day * 24 * 60 * 60 * 1000);
+			caledyear = v.getFullyear();
+			if(v.getMonth()<9){
+				caledmonth = '0' + v.getMonth()+1;
+			}
+			if(v.getdate()<9){
+				caledmonth = '0' + v.getdate();
+			}
+			else{
+				caledday = v.getDate();
+			}
+			return caledmonth + '/' + caledday + '/' + caledyear;
+		}
+
+		console.log("30일 전 날짜 :"+caldate(30));
+		console.log("일주일 전 날짜 :"+caldate(7));
+		console.log("하루 후 날짜 :"+caldate(-1));
+		console.log("일주일 후 날짜 :"+caldate(-7));
+		console.log("30일 후 날짜 :"+caldate(-30));
+
+	</script>
+
+</body>
+</html>

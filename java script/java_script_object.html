@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <p>오브젝트 내용을 확인하려면 클릭하세요!</p>
+    <button onclick="myFunction()">확인</button>
+    <p id="demo"></p>
+
+    <script>
+        function myFunction() {
+            var person = {
+                fname: "John",
+                lname: "Doe",
+                age: 25
+            };
+
+            var text = "";
+            var  x;
+            for (x in person) {
+                text += person[x] + " ";
+            }
+            document.getElementById("demo").innerHTML = text;
+        }
+             </script>
+</body>
+</html>
