@@ -1,0 +1,37 @@
+﻿<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>click button</title>
+
+    <body>
+        <p>Hello World</p>
+
+        <button onclick="myFunction()">Try it</button>
+
+        <p>The created style element contains css declaration that</p>
+
+        <script type="text/javascript">
+            window.onload = function(){
+                var output = '';
+                for (var i = 0; i < 256; i++) {
+                    output+='<div></div>';
+            }
+            document.body.innerHTML = output;
+
+            var divs = document.querySelectorAll('div');
+            for (var i = 0; i < divs.length; i++) {
+                var div = divs[i];
+
+                div.style.height = '2px';
+                div.style.background = 'rgb('+i+','+i+','+i+')';
+            }
+        };
+        </script>
+            </head>
+
+            <body>
+
+</body>
+
+</html>
