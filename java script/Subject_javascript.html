@@ -1,0 +1,85 @@
+﻿ <!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+	  <style>
+      table, th, td {
+        border: 1px solid #bcbcbc;
+      }
+    </style>
+
+</head>
+<body>
+<h1>도서 목록</h1>
+<h3>Order List</h3>
+
+
+<table>
+<tr>
+<td>제목</td>
+<td>가격</td>
+<td>수량</td>
+<td>합계</td>
+</tr>
+
+<tr>
+<td>HTML5</td>
+<td>28000원</td>
+<td><input type = "text" id="exp" value="0"></td>
+<td><input type = "text" id="sum" value="0">원</td>
+</tr>
+
+<tr>
+<td>Javascript</td>
+<td>26000원</td>
+<td><input type = "text" id="exp2" value="0"></td>
+<td><input type = "text" id="sum2" value="0">원</td>
+</tr>
+
+<tr>
+<td>jQuery</td>
+<td>25000원</td>
+<td><input type = "text" id="exp3" value="0"></td>
+<td><input type = "text" id="sum3" value="0">원</td>
+</tr>
+
+<tr>
+<td>합계</td>
+<td></td>
+<td><input type = "text" id="res" value="0"></td>
+<td><input type = "text" id="res2" value="0">원</td>
+</tr>
+
+</table>
+
+   <script>
+
+   function evaluateExp(){
+
+
+   var a = document.getElementById("exp").value;
+   var b = document.getElementById("exp2").value;
+   var c = document.getElementById("exp3").value;
+   
+   var result= 28000 * a;
+   var result2= 26000 * b;
+   var result3= 25000 * c;
+      
+   document.getElementById("sum").value=result;
+   document.getElementById("sum2").value=result2;
+   document.getElementById("sum3").value=result3;
+
+   var total = parseInt(a) + parseInt(b) + parseInt(c);
+      document.getElementById("res").value=total;
+
+   var total2 = result + result2 + result3;
+      document.getElementById("res2").value=total2;
+
+   }
+   </script>
+
+<input type = "button" value="합계" onclick = "evaluateExp()">
+
+</body>
+</html>
